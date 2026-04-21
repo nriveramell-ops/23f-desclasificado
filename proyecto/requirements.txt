@@ -1,0 +1,32 @@
+# ============================================================
+# DEPENDENCIAS DEL PROYECTO
+# ============================================================
+# Para instalar todo de golpe:  pip install -r requirements.txt
+# ============================================================
+
+# --- Manipulación de datos y utilidades básicas ---
+pandas>=2.0.0
+numpy>=1.24.0
+tqdm>=4.65.0             # barras de progreso
+
+# --- Visualización ---
+matplotlib>=3.7.0
+seaborn>=0.12.0
+plotly>=5.15.0           # gráficos interactivos para temas
+
+# --- Procesamiento de lenguaje natural (NLP) ---
+nltk>=3.8.1              # stopwords, tokenización básica
+spacy>=3.6.0             # lematización en español (modelo es_core_news_sm)
+
+# --- Topic modeling ---
+bertopic>=0.15.0         # enfoque principal: BERTopic
+gensim>=4.3.0            # implementación clásica de LDA + coherencia c_v
+scikit-learn>=1.3.0      # utilidades generales, TF-IDF, métricas
+
+# --- Embeddings (los usa BERTopic internamente) ---
+sentence-transformers>=2.2.0
+umap-learn>=0.5.3        # reducción de dimensionalidad
+hdbscan>=0.8.29          # clustering
+
+# --- Generación del informe PDF ---
+reportlab>=4.0.0

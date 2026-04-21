@@ -1,0 +1,50 @@
+# ============================================================
+# .gitignore del proyecto
+# ============================================================
+# Archivos y carpetas que Git NO debe subir al repositorio.
+# ============================================================
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# --- Entornos virtuales ---
+venv/
+env/
+ENV/
+.venv/
+
+# --- Jupyter Notebook ---
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# --- IDEs ---
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# --- Modelos entrenados (muy pesados, se regeneran ejecutando el notebook) ---
+outputs/modelos/*.pkl
+outputs/modelos/*.bin
+outputs/modelos/*.safetensors
+
+# --- Datos procesados (se pueden regenerar) ---
+# Ojo: dejamos data/raw/ en el repo (los JSON originales son el punto de partida)
+data/processed/*.csv
+data/processed/*.pkl
+data/processed/*.parquet
+
+# --- Archivos temporales del sistema ---
+*.log
+*.tmp
+Thumbs.db
+
+# --- Credenciales (por si acaso) ---
+*.env
+.env.*
+secrets.json
